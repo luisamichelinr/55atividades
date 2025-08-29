@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>9. Crie uma lista ul com itens e um botão que altere o texto do primeiro item.</h1>
+    <ul>
+        <li id="texto">Texto que vai ser alterado</li>
+        <li>Texto que não vai ser alterado</li>
+        <li>Outro texto que não vai ser alterado</li>
+    </ul>
+    <button onclick="alterarUmItemDaLista()">Clique aqui</button>
+
+    <script>
+        function alterarUmItemDaLista() {
+            document.getElementById("texto").innerHTML = "Texto Alterado"
+        }
+    </script>
+</body>
+</html>

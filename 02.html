@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2. Faça um input de texto e um botão que, ao clicar, mostre o valor digitado dentro de um</h1>
+    <p id="texto"></p>
+    <input type="text" id="input">
+    <button onclick="mostrarNoP()">Clique aqui</button>
+
+    <script>
+        function mostrarNoP() {
+            var texto = document.getElementById("input").value
+            document.getElementById("texto").innerHTML = texto
+        }
+    </script>
+</body>
+</html>

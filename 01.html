@@ -6,12 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>1. Crie um botão que, ao ser clicado, exiba no console o texto de um parágrafo usando getElementById.</h1>
     <p id="texto">Parágrafo</p>
     <button onclick="mostrarNoConsole()">Clique aqui</button>
 
     <script>
         function mostrarNoConsole() {
-            var texto = getElementById("texto").innerHTML
+            var texto = document.getElementById("texto").innerHTML
             console.log(texto);
         }
     </script>

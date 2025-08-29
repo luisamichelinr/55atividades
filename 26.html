@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>26. Ao perder o foco (onblur), o campo volta ao branco.</h1>
+    <input id="input" onfocus="fundoAmarelo()" onblur="fundoBranco()">
+
+    <script>
+        function fundoAmarelo() {
+            document.getElementById("input").style.background = "yellow"
+        }
+
+        function fundoBranco() {
+            document.getElementById("input").style.background = "white"
+        }
+
+    </script>
+</body>
+</html>

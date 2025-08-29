@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>8. Faça uma página que mostre em um p a data e hora atuais ao clicar em um botão.</h1>
+    <p id="paragrafo"></p>
+    <button onclick="mostrarDataHora()">Clique aqui</button>
+
+    <script>
+        function mostrarDataHora() {
+            const d = new Date()
+            document.getElementById("paragrafo").innerHTML = d;
+
+        }
+    </script>
+</body>
+</html>

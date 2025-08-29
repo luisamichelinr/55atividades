@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>22. Faça um botão que conte quantos cliques já foram feitos nele.</h1>
+    <p id="contador">0</p>
+    <button onclick="contadorDeCliques()">Clique Aqui</button>
+
+    <script>
+        var qtd = 0
+        function contadorDeCliques() {
+            qtd = qtd + 1
+            document.getElementById("contador").innerHTML = qtd
+        }
+
+    </script>
+</body>
+</html>

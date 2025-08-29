@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>7. Crie um botão que mostre a quantidade de caracteres dentro de um parágrafo (.innerText.length).</h1>
+    <p id="paragrafo">Parágrafo</p>
+    <p id="quantidade"></p>
+    <button onclick="mostrarQuantidade()">Clique aqui</button>
+
+    <script>
+        function mostrarQuantidade() {
+            var quantidade = document.getElementById("paragrafo").innerText.length
+            document.getElementById("quantidade").innerHTML = quantidade
+        }
+    </script>
+</body>
+</html>

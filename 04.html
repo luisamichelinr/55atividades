@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>4. Crie três parágrafos com IDs diferentes e, ao clicar em um botão, exiba o conteúdo de cada um no console.</h1>
+    <p id="p1">Parágrafo 1</p>
+    <p id="p2">Parágrafo 2</p>
+    <p id="p3">Parágrafo 3</p>
+    <button onclick="mostrarOsTres()">Clique aqui</button>
+
+    <script>
+        function mostrarOsTres() {
+            var p1 = document.getElementById("p1").innerHTML
+            var p2 = document.getElementById("p2").innerHTML
+            var p3 = document.getElementById("p3").innerHTML
+
+            console.log(p1)
+            console.log(p2)
+            console.log(p3)
+
+        }
+    </script>
+</body>
+</html>

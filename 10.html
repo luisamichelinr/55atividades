@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>10. Faça um botão que mostre o ID de um elemento ao clicar nele.</h1>
+    <p id="calopsita">Quero descobrir a ID!</p>
+    <p id="id"></p>
+    <button onclick="mostrarID()">Clique aqui</button>
+
+    <script>
+        function mostrarID() {
+            var id = document.getElementById("calopsita").id
+            document.getElementById("id").innerHTML = id
+        }
+    </script>
+</body>
+</html>

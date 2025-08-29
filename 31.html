@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>31. Faça um botão que adicione uma nova linha de texto em um p.</h1>
+    <p id="paragrafo"></p>
+    <button id="botao" onclick="adicionarTexto()">Clique aqui</button>
+
+    <script>
+        function adicionarTexto() {
+            document.getElementById("paragrafo").innerHTML += " Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        }
+
+    </script>
+</body>
+</html>

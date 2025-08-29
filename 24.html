@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>22. Faça um botão que conte quantos cliques já foram feitos nele.</h1>
+    <div id="div" style="width: 100px; height: 100px; background-color: grey" onmouseover="mudarCor()" onmouseout="voltarCor()"></div>
+
+    <script>
+        function mudarCor() {
+            document.getElementById("div").style.background = "orange"
+        }
+        function voltarCor() {
+            document.getElementById("div").style.background = "grey"
+        }
+
+    </script>
+</body>
+</html>
