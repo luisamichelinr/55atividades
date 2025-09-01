@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>38. Crie uma calculadora simples de soma: dois inputs e um botão que exibe o resultado em p.</h1>
+    <p id="resultado">Resultado:</p>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <button onclick="somar()">Clique aqui</button>
+
+    <script>
+        function somar() {
+            var num1 = document.getElementById("input1").value
+            var num2 = document.getElementById("input2").value
+            var total = Number(num1) + Number(num2)
+            document.getElementById("resultado").innerHTML = "Resultado: " + total
+        }
+    </script>
+</body>
+</html>

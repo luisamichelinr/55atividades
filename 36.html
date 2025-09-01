@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>36. Crie um contador que diminui em -1 a cada clique em outro botão.</h1>
+    <p id="contador">0</p>
+    <button onclick="aumentarCliques()">+</button>
+    <button onclick="diminuirCliques()">-</button>
+
+    <script>
+        var qtd = 0
+        function aumentarCliques() {
+            qtd = qtd + 1
+            document.getElementById("contador").innerHTML = qtd
+        }
+        function diminuirCliques() {
+            qtd = qtd - 1
+            document.getElementById("contador").innerHTML = qtd
+        }
+
+    </script>
+</body>
+</html>

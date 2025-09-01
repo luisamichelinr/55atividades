@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>48. To-do list: botão que adiciona uma tarefa em uma lista ul.</h1>
+    <ul id="lista">
+    </ul>
+    <input type="text" id="input">
+    <button id="botao" onclick="adicionarTarefa()">Clique aqui</button>
+
+
+
+    <script>
+        function adicionarTarefa() {
+            var tarefa = document.getElementById("input").value
+            document.getElementById("lista").innerHTML += "<li>" + tarefa + "</li>"
+        }
+    </script>
+</body>
+</html>

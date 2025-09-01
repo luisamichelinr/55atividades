@@ -12,8 +12,9 @@
 
     <script>
         function mostrarDataHora() {
-            const d = new Date()
-            document.getElementById("paragrafo").innerHTML = d;
+            let date = new Date()
+            var data = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+            document.getElementById("paragrafo").innerHTML = data;
 
         }
     </script>

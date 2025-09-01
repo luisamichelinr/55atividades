@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>44. Relógio: botão que mostra a hora atual dentro de um h2.</h1>
+    <h2 id="h2"></h2>
+    <button onclick="mostrarHora()">Clique aqui</button>
+
+    <script>
+        function mostrarHora() {
+            let date = new Date()
+            var horas = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+            document.getElementById("h2").innerHTML = horas
+        }
+    </script>
+</body>
+</html>

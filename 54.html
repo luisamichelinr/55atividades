@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>54. Calculadora de dobro: botão que pega o número digitado e mostra o dobro em p.</h1>
+    <p id="resultado">Resultado:</p>
+    <input type="number" id="input">
+    <button onclick="dobrar()">Clique aqui</button>
+
+    <script>
+        function dobrar() {
+            var num = document.getElementById("input").value
+            var total = Number(num)*2
+            document.getElementById("resultado").innerHTML = "Resultado: " + total
+        }
+    </script>
+</body>
+</html>

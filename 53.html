@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>53. Caixa de alerta personalizada: botão que pega o texto de um input e exibe em alert().</h1>
+    <input type="text" id="input"> 
+    <button onclick="mostrarAlert()">Clique aqui</button>
+
+    <script>
+        function mostrarAlert() {
+            var texto = document.getElementById("input").value
+            alert(texto)
+        }
+    </script>
+</body>
+</html>

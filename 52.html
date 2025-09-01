@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>52. Carrossel simples: botão “Próximo” que troca uma imagem para a próxima.</h1>
+    <div style="display: flex; gap: 20px;">
+        <button onclick="anteriorImg()" style="width: 25px; height: 25px;"><</button>   
+        <img src="https://www.papeiseparede.com.br/1307-thickbox_default/papel-de-parede-paisagem-natural-e-nuvens.jpg.webp" alt="Paisagem do campo" id="img1" style="width: 300px; height: 200px; display: block;">
+        <img src="https://i0.wp.com/bernadetealves.com/wp-content/uploads/2021/06/Ipes-Roxos-dao-o-tom-da-paisagem-de-Brasilia-Conjunto-Nacional-Bernadete-Alves.jpg?resize=910%2C603&ssl=1" alt="Paisagem do campo" id="img2" style="width: 300px; height: 200px; display: none;">
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/9169455-ceu-dourado-por-do-sol-na-costa-natureza-paisagem-vetor.jpg" alt="Paisagem do pôr do sol" style="width: 300px; height: 200px; display: none" id="img3">
+        <button onclick="proximaImg()" style="width: 25px; height: 25px;">></button>
+    </div>
+    <script>
+        var img = 1
+        function proximaImg() {
+            if (img == 1) {
+                document.getElementById("img1").style.display = "none"
+                document.getElementById("img2").style.display = "block"
+                img = 2
+            }
+            else if (img == 2) {
+                document.getElementById("img2").style.display = "none"
+                document.getElementById("img3").style.display = "block"
+                img = 3
+            }
+            else if (img == 3) {
+                document.getElementById("img3").style.display = "none"
+                document.getElementById("img1").style.display = "block"
+                img = 1
+            }
+        }
+        function anteriorImg() {
+            if (img == 1) {
+                document.getElementById("img1").style.display = "none"
+                document.getElementById("img3").style.display = "block"
+                img = 3
+            }
+            else if (img == 3) {
+                document.getElementById("img3").style.display = "none"
+                document.getElementById("img2").style.display = "block"
+                img = 2
+            }
+            else if (img == 2) {
+                document.getElementById("img2").style.display = "none"
+                document.getElementById("img1").style.display = "block"
+                img = 1
+            }
+        }
+
+    </script>
+</body>
+</html>

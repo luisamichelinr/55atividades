@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>45. Like: botão que ao clicar soma +1 curtida em um contador.</h1>
+    <p id="contador">0</p>
+    <button onclick="contadorDeLikes()">👍</button>
+
+    <script>
+        var qtd = 0
+        function contadorDeLikes() {
+            qtd = qtd + 1
+            document.getElementById("contador").innerHTML = qtd
+        }
+
+    </script>
+</body>
+</html>

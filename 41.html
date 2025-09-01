@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>41. Semáforo: três botões (vermelho, amarelo, verde) que mudam a cor de fundo de uma div circular.</h1>
+    <div style="display: flex; gap: 20px;">
+        <div id="semaforo" style="width: 200px; height: 200px; border-radius: 50%; border: 1px solid black;"></div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button style="height: 25px;" onclick="fundoVermelho()">Vermelho</button>
+            <button style="height: 25px;" onclick="fundoAmarelo()">Amarelo</button>
+            <button style="height: 25px;" onclick="fundoVerde()">Verde</button>
+        </div>
+    </div>
+
+    <script>
+        function fundoVermelho() {
+            document.getElementById("semaforo").style.backgroundColor = "red"
+        }
+        function fundoAmarelo() {
+            document.getElementById("semaforo").style.backgroundColor = "yellow"
+        }
+        function fundoVerde() {
+            document.getElementById("semaforo").style.backgroundColor = "green"
+        }
+    </script>
+</body>
+</html>

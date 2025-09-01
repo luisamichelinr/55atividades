@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>49. Mudança de tema: botão que alterna entre modo claro e escuro.</h1>
+    <button onclick="mudarTema()" id="botao">Modo escuro</button>
+
+    <script>
+        var tema = 1
+        function mudarTema() {
+            if (tema == 1) {
+                document.body.style.background = "black"
+                document.getElementById("botao").innerHTML = "Modo claro"
+                tema = 0
+            } else {
+                document.body.style.background = "white"
+                document.getElementById("botao").innerHTML = "Modo escuro"
+                tema = 1
+            }
+        }
+    </script>
+</body>
+</html>

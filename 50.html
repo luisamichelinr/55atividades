@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>50. Adivinhação: botão que gera um número aleatório e mostra em um p.</h1>
+    <p id="resultado"></p>
+    <button onclick="sortear()">Clique aqui</button>
+
+    <script>
+        function sortear() {
+            numAleatorio = Math.floor(Math.random() * 100)
+            document.getElementById("resultado").innerHTML = numAleatorio
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>34. Faça um botão que substitua todo o texto de um parágrafo por "Texto resetado".
+</h1>
+    <p id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugit inventore qui suscipit at et necessitatibus eligendi iure est tempore illum, ad molestias omnis totam rem, delectus in perspiciatis? Dolor.</p>
+    <button id="botao" onclick="mudarTexto()">Clique aqui</button>
+
+
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("texto").innerHTML = "Texto resetado"
+        }
+    </script>
+</body>
+</html>

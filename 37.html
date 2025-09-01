@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">37. Faça um botão que altere o texto de um h1 para o que foi digitado em um input.</h1>
+    <input type="text" id="input">
+    <button onclick="mostrarNoH1()">Clique aqui</button>
+
+    <script>
+        function mostrarNoH1() {
+            var h1 = document.getElementById("input").value
+            document.getElementById("h1").innerHTML = h1
+        }
+    </script>
+</body>
+</html>
