@@ -6,14 +6,18 @@
 </head>
 <body>
     <h1>40. Faça um botão que troque o texto de todos os parágrafos para "Alterado!".</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum inventore suscipit fuga atque, ipsam iste non ipsa repellendus veritatis iusto perferendis. Quisquam odit illo optio, inventore explicabo praesentium distinctio.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum inventore suscipit fuga atque, ipsam iste non ipsa repellendus veritatis iusto perferendis. Quisquam odit illo optio, inventore explicabo praesentium distinctio.</p>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum inventore suscipit fuga atque, ipsam iste non ipsa repellendus veritatis iusto perferendis. Quisquam odit illo optio, inventore explicabo praesentium distinctio.</p>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum inventore suscipit fuga atque, ipsam iste non ipsa repellendus veritatis iusto perferendis. Quisquam odit illo optio, inventore explicabo praesentium distinctio.</p>
     <button onclick="alterarP()">Clique aqui</button>
 
     <script>
         function alterarP() {
-            // Perguntar para o Igor
+            var a = document.getElementsByClassName("a");
+            for (let i = 0; i < a.length; i++) {
+                a[i].innerHTML = "Alterado!";
+            }
         }
     </script>
+    <!-- Coloquei uma função que é ativada quando o usuário clica no botão e altera o texto de todos os parágrafos com a classe "a" para "Alterado!" através do .innerHTML e um loop for que percorre uma lista com todos os elementos dessa classe gerada através do getElementsByClassName() -->
 </body>
 </html>

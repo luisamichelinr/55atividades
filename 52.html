@@ -11,6 +11,7 @@
         <img src="https://www.papeiseparede.com.br/1307-thickbox_default/papel-de-parede-paisagem-natural-e-nuvens.jpg.webp" alt="Paisagem do campo" id="img1" style="width: 300px; height: 200px; display: block;">
         <img src="https://i0.wp.com/bernadetealves.com/wp-content/uploads/2021/06/Ipes-Roxos-dao-o-tom-da-paisagem-de-Brasilia-Conjunto-Nacional-Bernadete-Alves.jpg?resize=910%2C603&ssl=1" alt="Paisagem do campo" id="img2" style="width: 300px; height: 200px; display: none;">
         <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/9169455-ceu-dourado-por-do-sol-na-costa-natureza-paisagem-vetor.jpg" alt="Paisagem do pôr do sol" style="width: 300px; height: 200px; display: none" id="img3">
+        <img src="https://cdn.awsli.com.br/600x700/1238/1238683/produto/54903923/ecf0eca92e.jpg" alt="Paisagem do campo" style="width: 300px; height: 200px; display: none" id="img4">
         <button onclick="proximaImg()" style="width: 25px; height: 25px;">></button>
     </div>
     <script>
@@ -28,6 +29,11 @@
             }
             else if (img == 3) {
                 document.getElementById("img3").style.display = "none"
+                document.getElementById("img4").style.display = "block"
+                img = 4
+            }
+            else if (img == 4) {
+                document.getElementById("img4").style.display = "none"
                 document.getElementById("img1").style.display = "block"
                 img = 1
             }
@@ -35,21 +41,28 @@
         function anteriorImg() {
             if (img == 1) {
                 document.getElementById("img1").style.display = "none"
-                document.getElementById("img3").style.display = "block"
-                img = 3
-            }
-            else if (img == 3) {
-                document.getElementById("img3").style.display = "none"
-                document.getElementById("img2").style.display = "block"
-                img = 2
+                document.getElementById("img4").style.display = "block"
+                img = 4
             }
             else if (img == 2) {
                 document.getElementById("img2").style.display = "none"
                 document.getElementById("img1").style.display = "block"
                 img = 1
             }
+            else if (img == 3) {
+                document.getElementById("img3").style.display = "none"
+                document.getElementById("img2").style.display = "block"
+                img = 2
+            }
+            else if (img == 4) {
+                document.getElementById("img4").style.display = "none"
+                document.getElementById("img3").style.display = "block"
+                img = 3
+            }
+            
         }
 
     </script>
+    <!-- Criei dois botões que representam as ações de "Próximo" e "Anterior" e que, quando clicados, ativam as funções correspondentes para mudar a imagem exibida. Para isso, criei a variável "img" que armazena o número da imagem que está atualmente sendo exibida (1, 2 ou 3) e as funções "proximaImg" e "anteriorImg" que alteram essa variável e a exibição das imagens. Por isso, em cada função foi utilizado o if/else para verificar qual imagem está sendo exibida e qual deve ser a próxima (a anterior ou a próxima na sequência) -->
 </body>
 </html>
